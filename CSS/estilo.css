@@ -1,0 +1,50 @@
+body {
+    background-image: url(imagens/backgroudimg.jpg);
+}
+
+#topjogos {
+    color: rgb(253, 250, 250);
+    margin: 25px 5% 0px;
+    border-radius: 15px 15px 0px 0px;
+    padding: 10px 10px;
+    background-color: rgba(29, 87, 245, 0.897);
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#imgtop {
+    width: 50%;
+    height: 50%;
+}
+
+.carousel-inner {
+    border-radius: 0px 0px 15px 15px;
+}
+
+#carousel-top-jogos {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 15px
+}
+
+#jogoamigo {
+    color: lavender;
+    text-align: center;
+    font-size: 30px;
+    margin: 30px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 180px;
+}
+
+#cardjogos {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 5px 5px;
+}
+
+#jogueagora {
+    margin: 10px -40px 10px 20px;
+}

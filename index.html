@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CPSGames</title>
 </head>
 
 <body>
@@ -16,63 +16,129 @@
 
 <head>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
 
 
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
-            
-            <!-- Image and text -->
-            <nav class="navbar navbar-light bg-light">
-                <a class="navbar-brand" href="#">
-                    <img src="imagens/centropaula.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                    Paula Souza Gamers
-                </a>
-            </nav>
+            <div class="col-md-12">
+
+                <!-- Image and text -->
+                <nav class="navbar navbar-light bg-light">
+                    <a class="navbar-brand" href="#">
+                        <img src="imagens/centropaula.png" width="45-" height="30" class="d-inline-block align-top" alt="logo"> Paula Souza Gamers
+                    </a>
+                </nav>
+            </div>
         </div>
 
         <div id="menu" class="row">
-            
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Home</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-        
+            <div class="col-md-12">
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Gamers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Mensagens</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Meu Perfil
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <a class="dropdown-item" href="#">Configurações</a>
-                              
-                              <a class="dropdown-item" href="#">Sair</a>
-                            </div>
-                          </li>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Feed</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
 
-                    </ul>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Gamers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Mensagens</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Meu Perfil
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Configurações</a>
 
-                </div>
-            </nav>
+                                    <a class="dropdown-item" href="#">Sair</a>
+                                </div>
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div>
+            <h3 id="topjogos">Jogos mais jogados</h3>
         </div>
 
+        <div id="carousel-top-jogos" class="carousel slide" data-interval="2500" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img id="imgtop" class="d-block w-100" src="imagens/jogoSlide1.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img id="imgtop" class="d-block w-100" src="imagens/jogoSlide2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img id="imgtop" class="d-block w-100" src="imagens/jogoSlide3.jpg" alt="Third slide">
+                </div>
+            </div>
 
+        </div>
+        <div>
+            <p id="jogoamigo">Oque seus amigos estão jogando</p>
+        </div>
+
+        <div class="row">
+
+
+            <div id="cardamigo" class="col-md-4">
+                <div id="cardjogos" class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="imagens/card1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">League of Legends</h5>
+                        <p class="card-text">League of Legends é um jogo eletrônico do gênero multiplayer online battle arena
+                        </p>
+                        <a href="https://play.br.leagueoflegends.com/pt_BR" target="_blank" class="btn btn-primary">Jogue Agora</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id="cardamigo" class="col-md-4">
+                <div id="cardjogos" class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="imagens/card2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Clash Royale</h5>
+                        <p class="card-text">Clash Royale é um videojogo de estratégia freemium desenvolvido pela Supercell</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.supercell.clashroyale" target="_blank" class="btn btn-primary">Jogue Agora</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="cardamigo" class="col-md-4">
+                <div id="cardjogos" class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="imagens/card3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Garena Free Fire</h5>
+                        <p class="card-text">Garena Free Fire é um jogo eletrônico mobile de ação-aventura do gênero battle royale</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.dts.freefireth" target="_blank" class="btn btn-primary">Jogue Agora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -84,15 +150,10 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>
